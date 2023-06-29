@@ -5,8 +5,11 @@ import Home from '../../components/Home';
 const LandingPage = () => {
   return (
     <>
-      {/* <Navbar /> */}
+    <main className='w-full h-full '>
+      <Navbar />
       <Home />
+
+    </main>
     </>
   );
 };
