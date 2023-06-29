@@ -5,7 +5,7 @@ import Home from '../../components/Home';
 const LandingPage = () => {
   return (
     <>
-    <main className='w-full h-full '>
+    <main className='w-full h-full 2xl:container mx-auto'>
       <Navbar />
       <Home />
 
