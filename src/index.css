@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+.text {
+    font-family: 'Orbitron', sans-serif;
+
+}
+* {
+    /* outline: 1px solid white; */
+}
+.shape {
+    clip-path: polygon(0 0, 100% 0%, 87% 100%, 0% 100%);
+}
+.shaper {
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
+}
+.bg{
+    background-image: url('https://s8.uupload.ir/files/bg_g2no.png');
+    background-position: top ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.fade {
+background: linear-gradient(180deg, rgba(24, 23, 26, 0.00) 0%, #18171A 100%);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
