@@ -19,9 +19,9 @@ const Navbar = () => {
     <>
     {/* desktop nav */}
       <nav
-        className={`w-full 2xl:container mx-auto h-20 fixed flex items-center px-10 md:px-16 justify-between md:justify-between bg-transparent ${
-          active ? '' : 'backdrop-blur-sm'
-        } ${change ? 'backdrop-blur-sm' : 'backdrop-blur-none'}`}
+        className={`w-full z-30 2xl:container duration-200 overflow-hidden mx-auto h-20 fixed flex items-center px-10 md:px-16 justify-between md:justify-between ${
+          active ? 'backdrop-blur-sm' : ''
+        } ${change ? 'bg-[#110f15]/50 backdrop-blur-sm' : 'backdrop-blur-none bg-transparent'}`}
       >
         {/* logo */}
         <span className="text-orange-600 font-extrabold text-3xl">SPYRO</span>
@@ -74,8 +74,8 @@ const Navbar = () => {
         </span>
       </nav>
       {/* moblie menu content */}
-      <ul className={`flex sm:hidden top-20 flex-col items-center justify-center absolute z-30 bottom-0 left-0 w-full h-max backdrop-blur-sm text-slate-50 duration-200 ${
-          active ? 'translate-x-full' : 'translate-x-0'
+      <ul className={`flex sm:hidden overflow-hidden top-20 flex-col items-center justify-center fixed z-20 bottom-0 left-0 w-full h-max backdrop-blur-sm text-slate-50 duration-200 ${
+          active ? 'translate-x-0' : ' translate-x-full'
         }`}
       >
         <li className="p-4 border-y border-orange-600 hover:bg-orange-600/20 duration-200 w-full ">
