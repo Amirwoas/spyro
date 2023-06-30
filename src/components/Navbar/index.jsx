@@ -26,7 +26,7 @@ const Navbar = () => {
         {/* logo */}
         <span className="text-orange-600 font-extrabold text-3xl">SPYRO</span>
         {/* nav content */}
-        <ul className="hidden sm:flex text-slate-50 items-center justify-center gap-x-4 md:gap-x-8">
+        <ul className="hidden sm:flex text-slate-50 min-[850px]:ml-16 min-[950px]:ml-20 md:ml-1 items-center justify-center gap-x-4 md:gap-x-8">
           <li className="duration-200 hover:text-orange-500">
             <a className="py-4 px-2 w-full h-full" href="#" target="_blank">
               Classes
