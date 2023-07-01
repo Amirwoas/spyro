@@ -4,7 +4,7 @@ import Button from '../Button';
 const Home = () => {
   return (
     <>
-      <main className="w-full h-[95vh] sm:h-screen bg flex items-center px-10 md:px-16">
+      <main className="w-full h-[85vh] sm:h-screen bg flex items-center px-10 md:px-16">
         {/* grideint */}
         <span className="fade w-full absolute bottom-0 right-0 overflow-hidden h-2/5"></span>
 
