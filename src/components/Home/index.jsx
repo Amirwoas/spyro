@@ -8,14 +8,14 @@ const Home = () => {
         {/* grideint */}
         <span className="fade w-full absolute bottom-0 right-0 overflow-hidden h-2/5"></span>
 
-        <div className="max-w-xs md:max-w-xl flex flex-col justify-center gap-y-6">
+        <div className="max-w-xs md:max-w-xl flex flex-col justify-center gap-y-6 mt-16 sm:mt-0">
           {/* title  */}
           <span className="text-slate-50 font-Orbitron text-4xl">
             <h1 className="stroke-orange-600 fill-orange-600 inline stroke">Unleash</h1>
             <h1 className="inline leading-relaxed"> your Inner Athlete</h1>
           </span>
           {/* description */}
-          <span className="text-slate-50">
+          <span className="text-slate-50 text-sm sm:text-base">
             <p>
               Get ready to sweat it out and achieve your fitness goals with our
               high-energy fitness classes! Our classes are designed to cater to all

@@ -7,7 +7,7 @@ const Navbar = () => {
   // navbar blur events
   const [change, setChange] = useState(false);
   function changeColorNav() {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 80) {
       setChange(true);
     } else {
       setChange(false);
