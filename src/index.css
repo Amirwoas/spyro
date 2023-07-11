@@ -43,3 +43,9 @@ background: linear-gradient(0deg, #18171A 5%, rgba(217, 217, 217, 0.01) 50%);
 .active-fade {
     background: linear-gradient(0deg, #18171A 30%, rgba(217, 217, 217, 0.01) 60%);
 }
+/* footer */
+.footer {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('https://s8.uupload.ir/files/rectangle_49_e4r0.png'), lightgray 50% ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
