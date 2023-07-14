@@ -1,18 +1,19 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = () => { 
+  
   return (
     <>
       <div className="w-full h-max py-10 px-10 footer flex items-center justify-center flex-col gap-8">
         <h1 className="text-orange-600 font-extrabold text-3xl">SPYRO</h1>
-        <p className='text-slate-50 md:w-2/4 text-center'>
+        <p className="text-slate-50 md:w-2/4 text-center">
           Join us today and experience the transformative power of our fitness classes.
           Don't wait to start your fitness journey. Take the first step towards a
           healthier, stronger you. Let's sweat, have fun, and make fitness a way of life
           together!
         </p>
         {/* social */}
-        <div className='flex items-center gap-4'>
+        <div className="flex items-center gap-4">
           <span>
             <svg
               width="35"
@@ -82,10 +83,12 @@ const Footer = () => {
           </span>
         </div>
         {/* line */}
-        <span className='w-3/4 bg-slate-50/60 h-0.5'></span>
+        <span className="w-3/4 bg-slate-50/60 h-0.5"></span>
         {/* copy right */}
-        <div className='text-slate-50'>
-          <p className='text-center'>© SPYRO {new Date().getFullYear()}. All rights reserved.</p>
+        <div className="text-slate-50">
+          <p className="text-center">
+            © SPYRO {new Date().getFullYear()}. All rights reserved.
+          </p>
         </div>
       </div>
     </>

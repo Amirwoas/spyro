@@ -15,8 +15,8 @@ const LandingPage = () => {
         <Category />
         <Instructors />
       </main>
-      <Download/>
-      <Footer/>
+      <Download />
+      <Footer />
     </>
   );
 };
