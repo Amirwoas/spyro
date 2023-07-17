@@ -9,6 +9,7 @@ const FeedBack = () => {
 
         <h1 className='text-white font-semibold text-4xl m-14 text-center'>Client’s Feedback</h1>
 
+         {/* Start FeedBack Div */}
         <div className='flex flex-row max-md:flex-col text-white '>
           {data.map((item)=> (
             
@@ -17,19 +18,24 @@ const FeedBack = () => {
             <p className='text-xl tracking-wide capitalize m-8 mt-16 leading-8'>{item.Text}</p>
             
             <div className='m-7'>
+              {/* Star Svg */}
               <img src="https://s8.uupload.ir/files/frame_58_1ixk.png" alt="" />
             </div>
 
             <div className='flex flex-row m-7 items-center absolute bottom-4'>
+              {/* User Img & Name */}
               <img src={item.Img} alt="" className='mr-6' />
               <h1 className='text-lg'>{item.Name}</h1>
             </div>
-
+            
+            {/* Button Shape */}
             <div className='h-[10px] w-[330px] bg-orange-600 bottom-0 absolute'></div>
 
            </div>
           ))}
         </div>
+        {/* End FeedBack Div */}
+
       </div>
     </main>
   )
