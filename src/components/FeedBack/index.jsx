@@ -1,44 +1,72 @@
-import React from 'react'
-import data from './data.js'
+import React from 'react';
+import data from './data.js';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import './../FeedBack/index.css'
 
 const FeedBack = () => {
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return <span class=""></span>;
+    },
+  };
   return (
-    <main style={{ backgroundImage: `url('https://s8.uupload.ir/files/rectangle-12_xap5.png')` }}>
+    <main
+      style={{
+        backgroundImage: `url('https://s8.uupload.ir/files/rectangle-12_xap5.png')`,
+      }}
+    >
+      {/* header */}
+      <h1 className="text-white font-semibold text-3xl sm:text-4xl py-10 px-8 text-center">
+        Client’s Feedback
+      </h1>
 
-      <div className='flex flex-col justify-center items-center'>
+      {/* container */}
+      <Swiper
+        pagination={pagination}
+        modules={[Pagination]}
+        grabCursor={true}
+        loop={true}
+        spaceBetween={40}
+        slidesPerView={1}
+        breakpoints={{
+          550: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="flex items-center justify-center py-10 px-10 text-white "
+      >
+        {data.map((item) => (
+          <SwiperSlide
+            className=" h-[26rem] bg-black bg-opacity-50 flex flex-col border-b-[10px] border-orange-600 items-center justify-end pb-8"
+            key={item.id}
+          >
+            {/* feddback  */}
+            <p className="sm:text-xl flex items-center text-base tracking-wide capitalize leading-8 h-full px-4 sm:px-10">
+              {item.Text}
+            </p>
 
-        <h1 className='text-white font-semibold text-4xl m-14 text-center'>Client’s Feedback</h1>
-
-         {/* Start FeedBack Div */}
-        <div className='flex flex-row max-md:flex-col text-white '>
-          {data.map((item)=> (
-            
-           <div className='w-[330px] h-[470px] shrink-0 bg-black bg-opacity-50 rounded flex flex-col m-12 relative' key={item.id}>
-
-            <p className='text-xl tracking-wide capitalize m-8 mt-16 leading-8'>{item.Text}</p>
-            
-            <div className='m-7'>
-              {/* Star Svg */}
+            {/* Star rate*/}
+            <div className="py-5 w-full flex  px-4 sm:px-10">
               <img src="https://s8.uupload.ir/files/frame_58_1ixk.png" alt="" />
             </div>
 
-            <div className='flex flex-row m-7 items-center absolute bottom-4'>
-              {/* User Img & Name */}
-              <img src={item.Img} alt="" className='mr-6' />
-              <h1 className='text-lg'>{item.Name}</h1>
+            {/* User Img & Name */}
+            <div className="flex flex-row pt-5 items-center py-4 pl-4 pr-2 sm:pl-10 w-full">
+              <img src={item.Img} alt="feedback" className="mr-6" />
+              <h1 className="text-lg">{item.Name}</h1>
             </div>
-            
+
             {/* Button Shape */}
-            <div className='h-[10px] w-[330px] bg-orange-600 bottom-0 absolute'></div>
-
-           </div>
-          ))}
-        </div>
-        {/* End FeedBack Div */}
-
-      </div>
+            {/* <div className='h-2.5 w-full bg-orange-600'></div> */}
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      {/* End FeedBack Div */}
     </main>
-  )
-}
+  );
+};
 
-export default FeedBack
+export default FeedBack;
