@@ -4,15 +4,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import './../FeedBack/index.css'
+import './../FeedBack/index.css';
 
 const FeedBack = () => {
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return <span class=""></span>;
-    },
-  };
+
   return (
     <main
       style={{
@@ -26,10 +21,9 @@ const FeedBack = () => {
 
       {/* container */}
       <Swiper
-        pagination={pagination}
+        pagination={{ clickable: true }}
         modules={[Pagination]}
         grabCursor={true}
-        loop={true}
         spaceBetween={40}
         slidesPerView={1}
         breakpoints={{

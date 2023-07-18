@@ -49,3 +49,24 @@ background: linear-gradient(0deg, #18171A 5%, rgba(217, 217, 217, 0.01) 50%);
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* slider */
+.swiper-pagination-bullet {
+    width: 16px !important;
+    height: 10px !important;
+    text-align: center !important;
+    line-height: 20px !important;
+    font-size: 12px !important;
+    border-radius: 0 !important;
+    color: # !important;
+    opacity: 1 !important;
+    background: rgba(255, 255, 255, 0.2) !important; 
+    user-select: none !important;
+    margin: 0 2px !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 35px !important;
+    color: #ffffff !important;
+    background: #ff5900 !important;
+  }
+/*  */
