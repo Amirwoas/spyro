@@ -18,7 +18,7 @@ const Category = () => {
 
   return (
     <>
-    <div className='w-full flex flex-col items-center justify-center border-none py-20'>
+    <div className='w-full flex flex-col items-center justify-center border-none py-20 px-8'>
         <h1 className='text-slate-50 font-semibold text-2xl sm:text-3xl pb-20'> Find what moves you</h1>
         <div className='w-full h-full grid gap-x-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-1 sm:grid-rows-2 grid-rows-4 gap-y-10 pt-20'>
             {/* acordian image */}

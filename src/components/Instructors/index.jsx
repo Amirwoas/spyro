@@ -4,7 +4,7 @@ import data from '../Instructors/data';
 const Instructors = () => {
   return (
     <>
-      <section className='text-slate-50 pb-20'>
+      <section className='text-slate-50 pb-20 px-4 sm:px-10'>
         <h1 className='text-4xl w-full flex items-center justify-center pt-8 pb-12'>Instructors</h1>
         <div className='flex justify-center  gap-y-10 gap-x-8 flex-auto flex-wrap min-[980px]:flex-nowrap'>
           {/*  */}

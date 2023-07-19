@@ -7,7 +7,6 @@ import 'swiper/css/pagination';
 import './../FeedBack/index.css';
 
 const FeedBack = () => {
-
   return (
     <main
       style={{
@@ -34,7 +33,7 @@ const FeedBack = () => {
       >
         {data.map((item) => (
           <SwiperSlide
-            className=" h-[26rem] bg-black bg-opacity-50 flex flex-col border-b-[10px] border-orange-600 items-center justify-end pb-8"
+            className=" h-[26rem] bg-black/50 flex flex-col border-b-[10px] border-orange-600 items-center justify-end pb-8 mb-8"
             key={item.id}
           >
             {/* feddback  */}
